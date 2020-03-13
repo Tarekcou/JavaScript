@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container mt-4 d-flex d-flex-column">
+        <div class="card">
+            <div class="header">
+                <img src="img.jpg" alt="card img top" class="card-img-top rounded-top rounded-lg">
+                <i id="refresh" class="fa fa-sync fa-lg d-flex justify-content-end"></i>
+                <h1 id="date">12 march</h1>
+            </div>
+
+            <div>
+                <ul class="list-group">
+
+
+
+                </ul>
+
+                <form id="addTask">
+                    <div class="input-group d-flex justify-content-end">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i style="color: brown;"
+                                    class=" fas fa-plus-circle fa-lg "></i></span>
+
+                        </div>
+                        <input id="add"  class="form-control" type="text" placeholder="Add task">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <script type="module" src="main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+.container
+{
+    width: 480px;
+    min-height: 840px;
+    
+}
+.input-group
+{
+    position: absolute;
+    bottom: 0;
+}
+.header
+{
+    position: relative;
+    color: white;
+}
+#date
+{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    font-size: 30px;
+}
+#refresh
+{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
