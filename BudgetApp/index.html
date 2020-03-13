@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>BUDGET APP</title>
+</head>
+
+<body>
+    <div class="container jumbotron mt-4">
+        <h3>BUDGET APP</h3>
+        <div class="row mt-4">
+
+
+            <div class="col-md-5 col-sm-5">
+                <form style="border: 2px solid darkseagreen;" id="budgetForm" class=" p-3 mb-4">
+                    <div class="form-group">
+                        <label>Please Enter Your Budget</label>
+                        <input id="budget"  type="number" class="form-control" value="">
+                        <input style="color: darkseagreen;" type="button" class="btn border border-success btnCalculate mt-2"
+                            value="Calculate">
+                    </div>
+                </form>
+
+                <form style="border: 2px solid chocolate;" id="expenseForm" class="p-3 expenseForm">
+                    <div class="form-group">
+                        <label>Please Enter Your Expense Title</label>
+
+                        <input type="text" id="expenseTitle" class="form-control  mb-2 " value="">
+                        <label>Please Enter Expense Amount</label>
+                        <input type="number" id="expense" class="form-control  mb-2 " value="">
+
+                        <input style="color: chocolate;" type="button" id="btnExpense" class="btn border  border-danger "
+                            value="Add Expense">
+                    </div>
+                </form>
+            </div>
+
+
+
+            <div  class="col-md-7 col-sm-7 pl-5 pr-5 pt-2 ">
+               
+                <div class="row ">
+                    <div class="col-md-4 col-sm-4 col-xs-4 text-center">
+                        <h5>Budget</h5>
+                        <i class="fas fa-hand-holding-usd fa-2x mt-4 mb-4"></i>
+                        <h4 id="budgetMoney" style="color: forestgreen;">0<span>Tk</span></h4>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4 text-center">
+                        <h5>Expenses</h5>
+                        <i class="fas fa-book-medical fa-2x mt-4 mb-4"></i>
+                        <h4 id="expenseMoney" style="color: firebrick;">0<span>Tk</span></h4>
+                    </div>
+                    <div class="col-md-4 col-sm-4  col-xs-4 text-center">
+                        <h5>Balance</h5>
+                        <i class="fas fa-money-bill-alt fa-2x mt-4 mb-4"></i>
+                        <h4 id="balanceMoney" style="color: forestgreen;">0<span>Tk</span></h4>
+                    </div>
+                </div>
+
+                <div class="row mt-5 text-center" >
+                   <table class="table table-striped ">
+                       <thead class="table-success">
+                           <tr>
+                            <th>Expense Title</th>
+                            <th>Expense Value</th>
+                            <th></th>
+                            
+                           </tr>
+                          
+                       </thead>
+                       <tbody class="table-body">
+                          
+                       </tbody>
+                   </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="main.js" ></script>
+</body>
+
+</html>
